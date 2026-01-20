@@ -17,6 +17,7 @@ function Login() {
       });
       alert(res.data.message);
       localStorage.setItem("token", res.data.token);
+      localStorage.setItem("name", res.data.name); 
       navigate("/dashboard"); // later you can create dashboard
     } catch (err) {
       alert(err.response.data.message);
