@@ -11,7 +11,7 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("https://mern-auth-backend.onrender.com/login", {
+      const res = await axios.post("https://login-signup-mvq6.onrender.com/login", {
         email,
         password
       });
